@@ -1,0 +1,41 @@
+.hero {
+  width: 80%;
+  margin: 5% auto;
+  padding: 3% 3% 5%;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 555px;
+}
+
+.bin {
+  text-align: left;
+}
+
+.typescript-logo-image {
+  background-image: url('../images/logo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.subtitle-container {
+  display: flex;
+
+  .subtitle-text,
+  .typescript-logo-image {
+    height: 100px;
+    align-self: flex-start;
+
+    h5 {
+      margin: 20px;;
+    }
+
+    p {
+      padding: 0 0 0 15%;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+body {
+  font-family: 'Ubuntu Mono', monospace, 'Arial';
+      font-size: 18px;
+  color: rgb(61, 60, 60);
+  background-image: url('../images/background.jpg');
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.25em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.85em;
+}
+
+h4 {
+  font-size: 1.55em;
+}
+
+h5 {
+  font-size: 1.35em;
+}
+
+h6 {
+  font-size: .95em;
+}
+
+p {
+  font-size: 1em;
+}
+
+label {
+  font-size: 1.55em;
+}
+
+table {
+  th {
+    font-size: 1.55em;
+  }
+
+  td {
+    // border: 1px solid #ccc;
+    padding: 3px;
+  }
+}
+
+input {
+  display: block;
+  margin: 5% 0;
+  width: 95%;
+  height: 40px;
+  padding: 2px 5px;
+  font-size: 1.55em;
+  color: rgb(57, 116, 124);
+}
+
+button {
+  width: 200px;
+  height: 55px;
+  background-color: rgb(57, 116, 124);
+  color: #fff;
+  font-size: 1.55em;
+  font-family: 'Ubuntu Mono', monospace, 'Arial';
+  padding: 5% 4%;
+  border: 4px solid rgb(57, 116, 124);;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #fff;
+    color: rgb(57, 116, 124);
+  }
+}
+
+.superfluous {
+  color: rgb(160, 44, 44);
+}

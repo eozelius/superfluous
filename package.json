@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "text to bits encoder",
   "scripts": {
-    "start": "tsc --watch && node dist/index.js",
-    "build": "tsc && echo 'compiled files to dist folder'"
+    "lint": "tslint -c tslint.json 'src/**/*.ts' 'test/**/*.ts'",
+    "typecheck": "rm -rf ts-compiled-dist && tsc --resolveJsonModule && rm -rf ts-compilied-dist",
+    "build": "yarn typecheck && yarn webpack",
+    "webpack": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server",
+    "execute": "echo 'not implemented yet.'"
   },
   "main": "index.other.ts",
   "repository": "bit-encoder.ethanoz.com",
@@ -12,7 +16,19 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "css-loader": "^4.3.0",
+    "dart-sass": "^1.25.0",
+    "file-loader": "^6.1.0",
+    "html-webpack-plugin": "^4.4.1",
+    "jest": "^26.4.2",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.3",
     "tslint": "^6.1.3",
-    "typescript": "^4.0.2"
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
