@@ -12,3 +12,14 @@
     line-height: 0;
   }
 }
+
+.interactive-text-output {
+  display: flex;
+  margin-top: 10%;
+
+  .encoded-container,
+  .decoded-container {
+    width: 50%;
+    text-align: center;
+  }
+}

@@ -40,17 +40,6 @@ label {
   font-size: 1.55em;
 }
 
-table {
-  th {
-    font-size: 1.55em;
-  }
-
-  td {
-    // border: 1px solid #ccc;
-    padding: 3px;
-  }
-}
-
 input {
   display: block;
   margin: 5% 0;
@@ -81,4 +70,24 @@ button {
 
 .superfluous {
   color: rgb(160, 44, 44);
+}
+
+.super {
+  color: rgb(57, 116, 124);
+}
+
+.demo {
+  display: flex;
+
+  .decoded-container,
+  .encoded-container {
+    width: 50%;
+    text-align: center;
+
+    .row {
+      padding: 2%;
+      height:  150px;
+      overflow: scroll;
+    }
+  }
 }

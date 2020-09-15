@@ -5,6 +5,7 @@ import './styles/style.scss'
 import './styles/hero.scss'
 import './styles/intro.scss'
 import './styles/form.scss'
+import './styles/gists.scss'
 
 // console.log('[ index.ts ] na() hardCodedData => ', hardCodedData1)
 
@@ -48,13 +49,14 @@ function sanitize (text: string) : string {
     .replace(':', '')
 }
 
-document.addEventListener("DOMContentLoaded", function() { 
+document.addEventListener("DOMContentLoaded", function() {
   const encodeInput = <HTMLInputElement>document.getElementById('encode')
-  const encodeBtn = <HTMLInputElement>document.querySelector('.submit-encode')
-  const encodedContainer = <HTMLInputElement>document.querySelector('.encoded-output-container')
+  const encodeBtn = <HTMLElement>document.querySelector('.submit-encode')
+  const encodedStringContainer = <HTMLElement>document.querySelector('.interactive-text-output .decoded-container')
+  const encodedSuperContainer = <HTMLElement>document.querySelector('.interactive-text-output .encoded-container')
   
   const decodeInput = <HTMLInputElement>document.getElementById('decode')
-  const decodeBtn = <HTMLInputElement>document.querySelector('.submit-decode')
+  const decodeBtn = <HTMLElement>document.querySelector('.submit-decode')
   const decodedContainer = <HTMLInputElement>document.querySelector('.decoded-output-container')
 
   if (encodeBtn) {
@@ -70,9 +72,29 @@ document.addEventListener("DOMContentLoaded", function() {
             })
           })
 
-          encodedContainer.innerHTML = JSON.stringify(encodedData[0], null, 2)
+          const stringDiv = document.createElement('div')
+          stringDiv.classList.add('row')
+
+          const stringP = document.createElement('p')
+          stringP.classList.add('superfluous')
+          stringP.innerHTML = textToEncode
+
+          stringDiv.appendChild(stringP)
+          encodedStringContainer.appendChild(stringDiv)
+
+          const encodedDiv = document.createElement('div')
+          encodedDiv.classList.add('row')
+
+          const encodedP = document.createElement('p')
+          encodedP.classList.add('superfluous')
+          encodedP.innerHTML = JSON.stringify(encodedData[0], null, 2)
+
+          encodedDiv.appendChild(encodedP)
+          encodedSuperContainer.appendChild(encodedDiv)
         }
-      } catch (error) {}
+      } catch (error) {
+        console.error('error => ', error)
+      }
     })
   }
 
@@ -82,6 +104,4 @@ document.addEventListener("DOMContentLoaded", function() {
       console.log('DECODE!!!! => ', textToDecode)
     })
   }
-
-
 })

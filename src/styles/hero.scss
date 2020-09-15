@@ -5,7 +5,6 @@
   text-align: center;
   background-color: #fff;
   border-radius: 5px;
-  height: 555px;
 }
 
 .bin {
@@ -18,13 +17,13 @@
   background-repeat: no-repeat;
   width: 100px;
   height: 100px;
-  display: inline-block;
+  display: block;
+  margin: 10% auto 3%;
 }
 
 .subtitle-container {
   display: flex;
 
-  .subtitle-text,
   .typescript-logo-image {
     height: 100px;
     align-self: flex-start;
