@@ -6,6 +6,7 @@ import './styles/hero.scss'
 import './styles/intro.scss'
 import './styles/form.scss'
 import './styles/gists.scss'
+import './styles/howitworks.scss'
 
 // console.log('[ index.ts ] na() hardCodedData => ', hardCodedData1)
 

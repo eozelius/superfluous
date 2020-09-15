@@ -1,0 +1,26 @@
+.how-it-works {
+  text-align: left;
+
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  .step {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5% auto;
+    padding: 3% 2%;
+  }
+}
+
+.scramble {
+  background-image: url('../images/scramble.png');
+  width: 100%;
+  min-height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
