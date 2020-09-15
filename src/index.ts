@@ -24,15 +24,12 @@ let data = hardCodedData1
 // Prepare/sanitize Dataset for encoding
 const dataStruct = new DataStruct(data)
 const serializedData = dataStruct.serializedPhrases
-// console.log('[ index.js ] serializedData to be encoded => ', serializedData)
 
 const encodedData = serializedData.map(phrase => {
   return phrase.map(word => {
     return new Encoder(word).encode()
   })
 })
-
-// console.log('[ index.js ] encodedData => ', JSON.stringify(encodedData))
 
 function sanitize (text: string) : string {
   return text
