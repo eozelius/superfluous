@@ -1,0 +1,213 @@
+/* Form.css */
+.bit-encoder-container,
+.bit-decoder-container {
+  width: 80%;
+  margin: 5% auto;
+  padding: 3% 3% 10%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.bit-encoder-container button,
+.bit-decoder-container button {
+  margin: 0 auto;
+  display: block;
+  line-height: 0;
+}
+
+.interactive-text-output {
+  display: flex;
+  margin-top: 10%;
+}
+
+.interactive-text-output .encoded-container,
+.interactive-text-output .decoded-container {
+  width: 50%;
+  text-align: center;
+}
+
+/* Gist.css */
+.gist-container {
+  width: 80%;
+  margin: 5% auto;
+  padding: 3% 3% 5%;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/* Hero.css */
+.hero {
+  width: 80%;
+  margin: 5% auto;
+  padding: 3% 3% 5%;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.bin {
+  text-align: left;
+}
+
+.typescript-logo-image {
+  background-image: url('./7dd9079c1eaf64857a273c3a8c69bd50.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 10% auto 3%;
+}
+
+.subtitle-container {
+  display: flex;
+}
+
+.subtitle-container .typescript-logo-image {
+  height: 100px;
+  align-self: flex-start;
+}
+
+.subtitle-container .typescript-logo-image h5 {
+  margin: 20px;;
+}
+
+.subtitle-container .typescript-logo-image p {
+  padding: 0 0 0 15%;
+  text-align: center;
+}
+
+/* How it works */
+.how-it-works {
+  text-align: left;
+}
+
+.how-it-works ul {
+  padding: 0;
+}
+
+.how-it-works li {
+  list-style: none;
+}
+
+.how-it-works .step {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5% auto;
+  padding: 3% 2%;
+}
+
+.scramble {
+  background-image: url('./d623ec8cd15f498cc44f7d24d4557a25.png');
+  width: 100%;
+  min-height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* intro.css */
+.intro {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 80%;
+  margin: 5% auto;
+  padding: 3% 3% 5%;
+  text-align: center;
+}
+
+/* app.css */
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap'); */
+
+body {
+  font-family: 'Ubuntu Mono', monospace, 'Arial';
+  font-size: 18px;
+  color: rgb(61, 60, 60);
+  background-image: url('./a69ee26c792b560a674943e1d2157e9e.jpg');
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.25em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.85em;
+}
+
+h4 {
+  font-size: 1.55em;
+}
+
+h5 {
+  font-size: 1.35em;
+}
+
+h6 {
+  font-size: .95em;
+}
+
+p {
+  font-size: 1em;
+}
+
+label {
+  font-size: 1.55em;
+}
+
+input {
+  display: block;
+  margin: 5% 0;
+  width: 95%;
+  height: 40px;
+  padding: 2px 5px;
+  font-size: 1.55em;
+  color: rgb(57, 116, 124);
+}
+
+button {
+  width: 200px;
+  height: 55px;
+  background-color: rgb(57, 116, 124);
+  color: #fff;
+  font-size: 1.55em;
+  font-family: 'Ubuntu Mono', monospace, 'Arial';
+  padding: 5% 4%;
+  border: 4px solid rgb(57, 116, 124);;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fff;
+    color: rgb(57, 116, 124);
+}
+
+.superfluous {
+  color: rgb(160, 44, 44);
+}
+
+.super {
+  color: rgb(57, 116, 124);
+}
+
+.demo {
+  display: flex;
+}
+
+.demo .decoded-container,
+.demo .encoded-container {
+  width: 50%;
+  text-align: center;
+}
+
+.demo .decoded-container .row,
+.demo .encoded-container .row {
+  padding: 2%;
+  height:  150px;
+  overflow: scroll;
+}

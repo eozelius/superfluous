@@ -1,7 +1,7 @@
 const path = require('path')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
-module.exports = {
+const js = {
   entry: './src/index.ts',
   devtool: 'inline-source-map',
   mode: 'development',
@@ -48,3 +48,37 @@ module.exports = {
     template: path.resolve(__dirname, 'public/index.html')
   })]
 }
+
+const css = {
+  entry: './src/styles/form.scss',
+  mode: 'development',
+  module: {
+    rules: [
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              implementation: require('sass'),
+              // sassOptions: {
+              //   fiber: false,
+              // },
+            },
+          },
+        ],
+      },
+    ],
+  },
+  resolve: {
+    extensions: [ '.scss' ],
+  },
+  output: {
+    filename: 'bit-encoder-style.css',
+    path: path.resolve(__dirname, 'dist'),
+  }
+}
+
+module.exports = css

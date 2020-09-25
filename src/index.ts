@@ -1,12 +1,12 @@
 import { DataStruct } from './models/DataStruct'
 import { Encoder } from './models/Encoder'
 import { hardCodedData1 } from '../data/data_set_1'
-import './styles/style.scss'
-import './styles/hero.scss'
-import './styles/intro.scss'
-import './styles/form.scss'
-import './styles/gists.scss'
-import './styles/howitworks.scss'
+// import './styles/style.scss'
+// import './styles/hero.scss'
+// import './styles/intro.scss'
+// import './styles/form.scss'
+// import './styles/gists.scss'
+// import './styles/howitworks.scss'
 
 // console.log('[ index.ts ] na() hardCodedData => ', hardCodedData1)
 
